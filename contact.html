@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PhotoFolio Bootstrap Template - Contact</title>
+  <title>LXEVENTSPRO - Contact</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -46,33 +46,31 @@
       <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
-        <h1>PhotoFolio</h1>
+        <img src="assets/img/lxlogo.png" alt=""> 
+        <h1>LX EVENTS PRO</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <!-- Gallery Drop down -->
+          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="gallery.html">Nature</a></li>
-              <li><a href="gallery.html">People</a></li>
-              <li><a href="gallery.html">Architecture</a></li>
-              <li><a href="gallery.html">Animals</a></li>
-              <li><a href="gallery.html">Sports</a></li>
-              <li><a href="gallery.html">Travel</a></li>
-              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="gallery.html">Wedding</a></li>
+              <li><a href="gallery.html">Debut</a></li>
+              <li><a href="gallery.html">Birthdays</a></li>
+              <li class="dropdown"><a href="#"><span>Other Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
+                  <li><a href="#">Corporate</a></li>
+                  <li><a href="#">Proposals</a></li>
+                  <li><a href="#">Club</a></li>
                 </ul>
               </li>
             </ul>
           </li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -96,7 +94,7 @@
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
             <h2>Contact</h2>
-            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+            <p>For any inquries you may send us an email below. </p>
 
           </div>
         </div>
@@ -114,7 +112,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Baliuag, Philippines, 3006</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -124,7 +122,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>lxeventspro@yahoo.com</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -134,7 +132,7 @@
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55</p>
+                <p>+63 949xxxxxxx</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -144,7 +142,7 @@
         <div class="row justify-content-center mt-4">
 
           <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="form.php" method="post" role="form" class="">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -159,11 +157,12 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
+              <br>
+              <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              </div> -->
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
