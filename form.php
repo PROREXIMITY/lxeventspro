@@ -38,7 +38,7 @@ try {
     $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'email@lxeventspro.tech';
-    $mail->Password = 'Lxeventspro8-';
+    $mail->Password = 'Xyrus@123';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
     $mail->SMTPOptions = array('ssl' => array('verify_peer'       => false,
