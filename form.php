@@ -37,7 +37,7 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'email@lxeventspro.tech';
+    $mail->Username = 'staff@lxeventspro.tech';
     $mail->Password = 'Xyrus@123';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
@@ -45,7 +45,7 @@ try {
                                           'verify_peer_name'  => false,
                                           'allow_self_signed' => true));
  
-    $mail->setFrom('email@lxeventspro.tech', 'LX EVENTS PRO Staff');
+    $mail->setFrom('staff@lxeventspro.tech', 'LX EVENTS PRO Staff');
  
     $mail->addAddress($email); 
     
