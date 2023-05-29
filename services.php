@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/lxlogo.png" rel="icon">
+  <link href="assets/img/lxlogo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,42 +43,29 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="admin.php" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <img src="assets/img/lxlogo.png" alt=""> 
+        <img src="assets/img/lxlogo.png" alt="">
         <h1>LX EVENTS PRO</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="admin.php" class="active">Home</a></li>
+          <li><a href="about.php">About</a></li>
           <!-- Gallery Drop down -->
-          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="gallery.html">Wedding</a></li>
-              <li><a href="gallery.html">Debut</a></li>
-              <li><a href="gallery.html">Birthdays</a></li>
-              <li class="dropdown"><a href="#"><span>Other Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Corporate</a></li>
-                  <li><a href="#">Proposals</a></li>
-                  <li><a href="#">Club</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+          <li><a href="services.php">Services</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <!-- <li><a href="login.php">Manager</a></li> -->
+          <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.facebook.com/lxeventspro" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/lxeventspro/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -94,9 +81,9 @@
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
             <h2>Services</h2>
-            <p>LX Events Pro is an event solution company that provides Audio, Lighting, LED Wall, Trusses, Roofing </p>
+            <!-- <p>This are the services that we provide</p> -->
 
-            <a class="cta-btn" href="contact.html">INQUIRE</a>
+            <!-- <a class="cta-btn">INQUIRE</a> -->
 
           </div>
         </div>
@@ -112,32 +99,32 @@
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="service-item position-relative">
               <i class="bi bi-activity"></i>
-              <h4><a href="" class="stretched-link">Audio</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4><a class="stretched-link">Audio</a></h4>
+              <!-- <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="service-item position-relative">
               <i class="bi bi-bounding-box-circles"></i>
-              <h4><a href="" class="stretched-link">Lighting</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a class="stretched-link">Lighting</a></h4>
+              <!-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="service-item position-relative">
               <i class="bi bi-calendar4-week"></i>
-              <h4><a href="" class="stretched-link">LED Wall</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4><a class="stretched-link">LED Wall</a></h4>
+              <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="service-item position-relative">
               <i class="bi bi-broadcast"></i>
-              <h4><a href="" class="stretched-link">Trusses and Roofing</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4><aclass="stretched-link">Trusses and Roofing</aclass=></h4>
+              <!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
             </div>
           </div><!-- End Service Item -->
 
@@ -150,7 +137,7 @@
     <section id="testimonials" class="testimonials">
       <div class="container">
 
-        <div class="section-header">
+        <!-- <div class="section-header">
           <h2>Testimonials</h2>
           <p>What they are saying</p>
         </div>
@@ -171,11 +158,11 @@
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                 </div>
-              </div>
+              </div> -->
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <!-- <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -187,11 +174,11 @@
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                 </div>
-              </div>
+              </div> -->
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <!-- <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -203,11 +190,11 @@
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                 </div>
-              </div>
+              </div> -->
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <!-- <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -219,11 +206,11 @@
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                 </div>
-              </div>
+              </div> -->
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <!-- <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -235,7 +222,7 @@
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                 </div>
-              </div>
+              </div> -->
             </div><!-- End testimonial item -->
 
           </div>

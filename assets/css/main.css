@@ -135,7 +135,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #ada8a7;
+  background: #a10606;
 }
 
 /*--------------------------------------------------------------
@@ -870,7 +870,7 @@ h6 {
 }
 
 .gallery-single .portfolio-info .btn-visit:hover {
-  background: #2cbc85;
+  background: #d89128;
 }
 
 .gallery-single .portfolio-description h2 {
@@ -916,7 +916,7 @@ h6 {
 
 .gallery-single .portfolio-description .testimonial-item .quote-icon-left,
 .gallery-single .portfolio-description .testimonial-item .quote-icon-right {
-  color: #5bd9a9;
+  color: #d89128;
   font-size: 26px;
   line-height: 0;
 }
@@ -951,6 +951,7 @@ h6 {
   height: 100%;
   overflow: hidden;
   z-index: 1;
+  
 }
 
 .services .service-item:before {
@@ -1147,6 +1148,7 @@ h6 {
   padding: 10px 12px;
 }
 
+
 .contact .php-email-form button[type=submit] {
   background: var(--color-primary);
   border: 0;
@@ -1157,7 +1159,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(39, 167, 118, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 @keyframes animate-loading {
@@ -1229,7 +1231,11 @@ h6 {
 }
 
 .hero .btn-get-started:hover {
-  background: #2cbc85;
+  background: #ffffff;
+}
+
+a.btn-get-started:hover {
+  background: #ffffff;
 }
 
 @media (max-width: 768px) {

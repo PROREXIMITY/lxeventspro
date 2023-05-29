@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/lxlogo.png" rel="icon">
+  <link href="assets/img/lxlogo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="admin.php" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <img src="assets/img/lxlogo.png" alt=""> 
@@ -52,25 +52,21 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="lx.php" class="active">Home</a></li>
+          <li><a href="about2.php">About</a></li>
           <!-- Gallery Drop down -->
           <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="gallery.html">Wedding</a></li>
-              <li><a href="gallery.html">Debut</a></li>
-              <li><a href="gallery.html">Birthdays</a></li>
-              <li class="dropdown"><a href="#"><span>Other Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Corporate</a></li>
-                  <li><a href="#">Proposals</a></li>
-                  <li><a href="#">Club</a></li>
-                </ul>
+              <li><a href="gallery2.html">Wedding</a></li>
+              <li><a href="gallery2.html">Debut</a></li>
+              <li><a href="gallery2.html">Birthdays</a></li>
               </li>
             </ul>
           </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services2.php">Services</a></li>
+          <li><a href="contact2.php">Contact</a></li>
+          <li><a href="login.php">Manager</a></li>
+          <!-- <li><a href="logout.php">Logout</a></li> -->
         </ul>
       </nav><!-- .navbar -->
 

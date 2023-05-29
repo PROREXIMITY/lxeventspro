@@ -1,3 +1,19 @@
+<?php
+include 'connection.php';
+$query2 = "SELECT * FROM information";
+$results = mysqli_query($conn, $query2);
+
+if (mysqli_num_rows($results) > 0) {
+
+  $row = mysqli_fetch_assoc($results);
+  $mission = $row['mission'];
+  $vision = $row['vision'];
+} else {
+
+  die("Error: Not found.");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +26,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/lxlogo.png" rel="icon">
+  <link href="assets/img/lxlogo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +44,13 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -36,7 +59,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="lx.php" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/lxlogo.png" alt="">
         <!-- <i class="bi bi-camera"></i> -->
@@ -45,33 +68,19 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="lx.php" class="active">Home</a></li>
+          <li><a href="about2.php">About</a></li>
           <!-- Gallery Drop down -->
-          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="gallery.html">Wedding</a></li>
-              <li><a href="gallery.html">Debut</a></li>
-              <li><a href="gallery.html">Birthdays</a></li>
-              <li class="dropdown"><a href="#"><span>Other Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Corporate</a></li>
-                  <li><a href="#">Proposals</a></li>
-                  <li><a href="#">Club</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services2.php">Services</a></li>
+          <li><a href="contact2.php">Contact</a></li>
+          <li><a href="login.php">Manager</a></li>
+          <!-- <li><a href="logout.php">Logout</a></li> -->
         </ul>
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.facebook.com/lxeventspro" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/lxeventspro/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -102,45 +111,40 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/lxlogo.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-5 content">
-            <h2>OWNER</h2>
+            <h2>Our Mission & Vision</h2>
             <p class="fst-italic py-3">
-              Trojan Darcen
+              <!-- Trojan Darcen -->
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>N/A</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.lxeventspro.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Baliwag, Bulacan</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>N/A</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>lxeventspro@yahoo.com</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">
-              Company Background
-            </p>
-            <p class="m-0">
-              Experience
-            </p>
-          </div>
-        </div>
 
-      </div>
+            <ul>
+              <li>
+                <i class=""></i>
+                <div>
+                  <h3>Mission</h3>
+                  <label for="mis"></label>
+                  <p class="editable" name="mission"><?php echo $mission; ?></p>
+                </div>
+              </li>
+              <li>
+                <i class=""></i>
+                <div>
+                  <h3>Vision</h3>
+                  <label for="vis"></label>
+                  <p class="editable" name="vision"><?php echo $vision; ?></p>
+                </div>
+              </li>
+            </ul>
+          </div>
     </section><!-- End About Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container">
 
-        <div class="section-header">
+        <!-- <div class="section-header">
           <h2>Reviews</h2>
           <p>What they are saying</p>
         </div>
@@ -161,11 +165,11 @@
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                 </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div> -->
+      </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
+      <div class="swiper-slide">
+        <!-- <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -177,11 +181,11 @@
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                 </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div> -->
+      </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
+      <div class="swiper-slide">
+        <!-- <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -193,11 +197,11 @@
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                 </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div> -->
+      </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
+      <div class="swiper-slide">
+        <!-- <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -209,11 +213,11 @@
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                 </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div> -->
+      </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
+      <div class="swiper-slide">
+        <!-- <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -225,15 +229,15 @@
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                 </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+              </div> -->
+      </div><!-- End testimonial item -->
 
       </div>
-    </section><!-- End Testimonials Section -->
+      <div class="swiper-pagination"></div>
+      </div>
+
+      </div>
+    </section>
 
   </main><!-- End #main -->
 
